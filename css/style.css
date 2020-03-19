@@ -526,8 +526,6 @@ img {
     position: relative;
     max-width: 47.85rem;
     margin-left: 4.28rem; }
-  .hero__title {
-    margin-bottom: 1rem; }
   .hero__text {
     font-size: 1.57rem;
     max-width: 500px;
@@ -592,7 +590,8 @@ img {
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.857rem;
-  line-height: 1.4; }
+  line-height: 1.4;
+  margin-bottom: 1rem; }
   .title--primary {
     color: #E3B873; }
 
