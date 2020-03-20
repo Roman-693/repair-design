@@ -51,7 +51,7 @@ $(document).ready(function () {
   // валидация формы
   $('.modal__form').validate({
   	errorClass: "invalid",
-  	rules: {
+  	rules: { 
   		//строчное правило
   		userName: {
   			required: true,
@@ -75,6 +75,19 @@ $(document).ready(function () {
 				required: "Обязательно укажите email",
 				email: "Введите в формате name@domain.com"
 			}
+		},
+		submitHandler: function(form) {
+			$.ajax({
+				type: "POST",
+				url: "send.php",
+				data: $(form).serialize(),
+				success: function (response) {
+					console.log('Ajax сработал. Ответ сервера: ' + response);
+					alert('Форма отправлена, мы свяжемся с вами в ближайшее время');
+					$(form)[0].reset();
+					modal.removeClass('modal--visible');
+				}
+			});
 		}
 
   });
