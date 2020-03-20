@@ -82,7 +82,6 @@ $(document).ready(function () {
 				url: "send.php",
 				data: $(form).serialize(),
 				success: function (response) {
-					console.log('Ajax сработал. Ответ сервера: ' + response);
 					alert('Форма отправлена, мы свяжемся с вами в ближайшее время');
 					$(form)[0].reset();
 					modal.removeClass('modal--visible');
