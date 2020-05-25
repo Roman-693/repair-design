@@ -7,7 +7,9 @@
 	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=71afe4fc-4974-4eef-a1bf-127ea371bba6&lang=ru_RU" type="text/javascript">
+    </script>
+	<title>Repair Design</title>
 </head>
 <body>
 	<header class="header">
@@ -24,7 +26,7 @@
 				</nav>
 				<div class="contacts menu__contacts">
 					<a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-					<button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+					<button class="button contacts__button button--primary button--round" data-toggle="modal">Заказать звонок</button>
 				</div>
 			</div>
 			<!-- /.menu -->
@@ -43,22 +45,22 @@
 						Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span>
 					</h1>
 					<p class="hero__text wow fadeInRight" data-wow-delay = "0.3s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-					<button class="button hero__button button--primary wow fadeInRight" data-toggle="modal" data-wow-delay = "0.5s">Рассчитать стоимость</button>
-					<button class="button hero__button button--outline wow fadeInRight" data-toggle="modal" data-wow-delay = "0.5s">Отправить заявку</button>					
+					<button class="button hero__button button--primary button--round wow fadeInRight" data-toggle="modal" data-wow-delay = "0.5s">Рассчитать стоимость</button>
+					<button class="button hero__button button--outline button--round wow fadeInRight" data-toggle="modal" data-wow-delay = "0.5s">Отправить заявку</button>					
 				</div>
 				<!-- /.hero__content -->
 			</div>
 			<!-- /.container -->
-			<a href="#" class="hero__scroll-down wow slideOutDown slow " data-wow-delay = "5s">Листайте вниз</a>
+			<a href="#title-link" class="hero__scroll-down wow slideOutDown slow " data-wow-delay = "5s">Листайте вниз</a>
 		</section>
 		<!-- /.hero -->
 
 		<section class="section section--dark projects">
 			<div class="container">
-				<div class="row">
-					<div class="col-46">
+				<div class="row row__projects">
+					<div class="col-45">
 						<div class="section-title section-title--left">
-							<h2 class="section-title__heading section-title__heading--primary">Завершенные  <span class="section-title__word">проекты</span></h2>
+							<h2 class="section-title__heading section-title__heading--primary">Завершенные  <a class="section-title__word" id="title-link">проекты</a></h2>
 							<p class="section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>				
 						</div>
 						<!-- Slider main container -->
@@ -93,7 +95,9 @@
 						        <div class="swiper-slide">
 						        	<div class="swiper-slide__text">
 						        		<h3 class="swiper-slide__heading">Город:</h3>
-						        		<span class="swiper-slide__value">Ростов-на-Дону  ЖК Адмирал</span>
+						        		<span class="swiper-slide__value">
+						        			Ростов-на-Дону  <span class="swiper-slide__value--word">ЖК Адмирал</span>
+						        		</span>
 						        	</div>
 
 						        	<div class="swiper-slide__text">
@@ -115,7 +119,9 @@
 						        <div class="swiper-slide">
 						        	<div class="swiper-slide__text">
 						        		<h3 class="swiper-slide__heading">Город:</h3>
-						        		<span class="swiper-slide__value">Ростов-на-Дону  ЖК Адмирал</span>
+						        		<span class="swiper-slide__value">
+						        			Ростов-на-Дону  <span class="swiper-slide__value--word">ЖК Адмирал</span>
+						        		</span>
 						        	</div>
 
 						        	<div class="swiper-slide__text">
@@ -144,26 +150,32 @@
 
 						</div>							
 					</div>
-					<!-- /.col-50 -->
-					<div class="col-54">
+					<!-- /.col-45 -->
+					<div class="col-55">
 						<!-- Slider main container -->
 						<div class="swiper-container swiper-no-swiping">
 						    <!-- Additional required wrapper -->
 						    <div class="swiper-wrapper">
 						        <!-- Slides -->
 						        <div class="swiper-slide">
-											<img src="img/projects/image-1.jpg" alt="image-1">
+											<div class="swiper-slide__img">
+												<img src="img/projects/image-1.jpg" alt="image-1">
+											</div>
 						        </div>
 						        <div class="swiper-slide">
-											<img src="img/projects/image-2.jpg" alt="image-2">
+						        	<div class="swiper-slide__img">
+						        		<img src="img/projects/image-2.jpg" alt="image-2">
+						        	</div>
 						        </div>
 						        <div class="swiper-slide">
-											<img src="img/projects/image-1.jpg" alt="image-3">
+						        	<div class="swiper-slide__img">
+						        		<img src="img/projects/image-1.jpg" alt="image-3">
+						        	</div>
 						        </div>
 						    </div>
 						</div>
 					</div>
-					<!-- /.col-50 -->
+					<!-- /.col-55 -->
 				</div>
 				<!-- /.row -->
 			</div>
@@ -193,10 +205,10 @@
 						<label for="user-phone3" class="label form__label label control__label">Телефон</label>
 						<input type="tel" name="userPhone" class="input form__input control__input input--dark" id="user-phone3" placeholder="Ваш номер телефона:">
 					</div>
-					<button class="button button--primary control__button">Отправить</button>
+					<button class="button button--primary control__button button--round">Отправить</button>
 					<div class="policy control__policy">
 						<input type="checkbox" name="policy-checkbox" id="policy-checkbox3" class="policy__checkbox" checked>
-						<label for="policy-checkbox3" class="policy__label control__policy-label">я соглашаюсь с обработкой данных</label>
+						<label for="policy-checkbox3" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
 					</div>
 					<!-- /.policy -->
 				</form>
@@ -238,7 +250,7 @@
 								</ul>
 								<!-- /.card__list -->
 								<strong class="card__pricetag">
-									от 1800 руб / м<sup>2</sup>
+									от 900 руб / м<sup>2</sup>
 								</strong>
 								<!-- /.card__pricetag -->
 							</div>
@@ -304,7 +316,7 @@
 								</ul>
 								<!-- /.card__list -->
 								<strong class="card__pricetag">
-									от 1800 руб / м<sup>2</sup>
+									от 4000 руб / м<sup>2</sup>
 								</strong>
 								<!-- /.card__pricetag -->
 							</div>
@@ -351,8 +363,8 @@
 									<!-- /.card_item -->
 								</ul>
 								<!-- /.card__list -->
-								<strong class="card__pricetag">
-									от 150 руб / м<sup>2</sup>
+								<strong class="card__pricetag card__pricetag--design">
+									150 руб / м<sup>2</sup>
 								</strong>
 								<!-- /.card__pricetag -->
 							</div>
@@ -386,8 +398,8 @@
 									<!-- /.card_item -->
 								</ul>
 								<!-- /.card__list -->
-								<strong class="card__pricetag">
-									от 400 руб / м<sup>2</sup>
+								<strong class="card__pricetag card__pricetag--design">
+									400 руб / м<sup>2</sup>
 								</strong>
 								<!-- /.card__pricetag -->
 							</div>
@@ -431,8 +443,8 @@
 									<!-- /.card_item -->
 								</ul>
 								<!-- /.card__list -->
-								<strong class="card__pricetag">
-									от 900 руб / м<sup>2</sup>
+								<strong class="card__pricetag card__pricetag--design">
+									900 руб / м<sup>2</sup>
 								</strong>
 								<!-- /.card__pricetag -->
 							</div>
@@ -468,24 +480,25 @@
 					</div>					
 					<div class="policy footer__policy">
 						<input type="checkbox" name="policy-checkbox" id="policy-checkbox2" class="policy__checkbox" checked>
-						<label for="policy-checkbox2" class="policy__label policy__label--center">я соглашаюсь с обработкой данных</label>
+						<label for="policy-checkbox2" class="policy__label policy__label--center">Я соглашаюсь с обработкой данных</label>
 					</div>
 					<!-- /.policy -->
 					<button class="button button--primary footer__button">Отправить</button>
 				</form>
 			</div>
 			<!-- /.footer-wrap -->
-			<div class="footer__info">
-				<h3 class="footer__title footer__title--primary">Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99</h3>
-				<div class="footer__icon icon">
-					<img src="img/email-icon.svg" alt="email" class="icon__email">
-					<img src="img/instagram-icon.svg" alt="instagram" class="icon__instagram">
+			<div class="footer__data">
+				<div class="footer__info">
+					<h3 class="footer__title footer__title--primary">Ростов на дону, Торговый центр Plaza Прямой телефон 
+						<span class="contacts__link"><a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768 32 99</a></span>
+					</h3>
+					<div class="footer__icon icon">
+						<img src="img/email-icon.svg" alt="email" class="icon__email">
+						<img src="img/instagram-icon.svg" alt="instagram" class="icon__instagram">
+					</div>
 				</div>
-			</div>
-			<!-- /.footer__info -->
-			<div class="map footer__map">
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa3bb19ad01f14bb0634127e3534b754d9303362173367965cc786aea62ce124e&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=true">
-				</script>
+				<!-- /.footer__info -->
+				<div class="map footer__map" id="map"></div>
 			</div>
 		</div>
 		<!-- /.container -->
@@ -503,7 +516,7 @@
 					</nav>
 					<div class="contacts menu__contacts">
 						<a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-						<button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+						<button class="button contacts__button button--primary button--round" data-toggle="modal">Заказать звонок</button>
 					</div>
 				</div>
 				<!-- /.menu -->

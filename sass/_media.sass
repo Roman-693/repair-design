@@ -6,6 +6,12 @@
 			&__item
 				margin-right: 1rem
 
+@media screen and (max-width: 1124px)
+	.swiper
+		&-slide
+			&__text
+				margin-right: 1rem
+
 @media screen and (max-width: 992px)
 	.nav
 		display: none
@@ -17,7 +23,18 @@
 		&__content
 			margin-left: 0
 
+	.col
+		&-45
+			width: 40%
+
+	.footer
+		&__map
+			width: 100%
+
 @media screen and (max-width: 760px)
+	.container
+		width: 90%
+
 	.row
 		flex-direction: column
 		align-items: center
@@ -34,9 +51,113 @@
 		&__text
 			margin-left: 0
 
-@media screen and (max-width: 570px)
-	.contacts
+	.section
+		&-title
+			&__word
+				&::after
+					display: none
 
+	.col
+		&-45
+			width: 100%
+		&-55
+			width: 100%
+			padding-top: 21px	
+
+@media screen and (max-width: 570px)
+	.button
+		&--round
+			border-radius: 0
+
+	.section
+		padding: 0
+
+		&-title
+			&__heading
+				margin-top: 0
+				margin-bottom: 1.8rem
+				font-size: 22px
+				font-weight: normal
+
+			&__text
+				width: 305px
+				font-size: 14px
+				line-height: 158.48%
+				margin-bottom: 2.1rem
+				font-weight: normal
+
+			&__description
+				font-size: 15px
+				line-height: 135.84%
+				font-weight: normal
+				margin-top: 0.8rem
+				margin-bottom: 3rem
+
+	.projects
+		margin: auto
+		padding-top: 36px
+		background: $dark	
+
+	.control
+		padding-top: 46px
+		color: $light
+		background-color: $dark
+
+		&__section-title
+			margin-bottom: 3.15rem
+			margin-top: 0
+
+		&__video
+			width: 100%
+			min-height: 17.2rem
+			margin-bottom: 2.3rem
+
+			.video__play
+				width: 60px
+				height: 60px
+
+		&__text
+			font-weight: normal
+			font-size: 14px
+			line-height: 169.8%
+			margin-bottom: 2.5rem
+
+			&::before
+				margin-bottom: 1.45rem
+
+		&__button
+			width: 100%
+			font-size: 15px
+			
+
+		&__input-group
+			flex-basis: 100%
+
+			&:first-child
+				margin-bottom: 63px
+
+		&__label
+			font-size: 15px
+
+		&__policy
+			margin-bottom: 56px
+
+		&__policy-label
+			justify-content: left
+			font-weight: normal
+			font-size: 16px
+			line-height: 22px
+
+		&__input
+			font-size: 18px
+			color: $light
+			border-bottom: 1px solid rgba($light, 0.3)
+
+		&__button
+			order: 1
+			margin-bottom: -23px
+
+	.contacts
 		&__phone
 			margin-right: 0
 			color: $light
@@ -49,20 +170,140 @@
 		font-size: 1.64rem
 
 	.hero
+		position: static
+		height: auto
+		padding-top: 143px
+		padding-bottom: 40px
+
+		&::before
+			height: 80%
+
 		&__scroll-down
 			display: none
 
 		&__content
-			max-width: 22.86rem
+			width: 100%
+
+		&__title
+			font-size: 1.916rem
+			max-width: 26rem
 
 		&__text
-			font-size: 1.29rem
-			margin-bottom: 2.28rem
+			font-size: 1.5rem
+			margin-bottom: 3rem
 
 		&__button
 			display: block
-			min-width: 22.86rem
+			width: 100%
 			margin-bottom: 1.85rem
+
+	.swiper
+
+		&-wrapper
+			margin-bottom: 3.3rem
+
+		&-slide
+
+			&__heading
+				font-size: 14px
+				font-weight: normal
+				margin-bottom: 0.85rem
+
+			&__text
+				flex-basis: 40%
+				margin-right: 2rem
+
+			&__img
+				margin-top: 1rem
+				height: 163px
+
+	.types
+		margin-top: 83px
+
+		&__section-title
+			margin-bottom: 3rem
+
+	.card
+		&__text
+			margin-top: -11.5rem
+			margin-bottom: 6rem
+			width: 22.5rem
+
+		&__pricetag
+			&--design
+				padding: 1rem 3.9rem
+				bottom: -1.2rem
+
+	.policy
+		&__label
+			&--center
+				font-size: 16px
+
+	.footer
+		background: $dark
+		padding-top: 1.6rem
+
+		&__title
+			font-size: 20px
+			margin-bottom: 4.9rem
+
+			&--primary
+				font-size: 18px
+
+		&__wrap
+			background: $dark
+			margin-top: 0
+			padding: 0
+			margin-bottom: 4.9rem
+
+		&__input-group
+			flex-basis: 100%
+			border-bottom: 1px solid rgba($light, 0.3)
+			margin-bottom: 63px
+				
+			&--full-width
+				margin-bottom: 10px
+
+		&__policy
+			flex-basis: auto
+			margin-bottom: 5.685rem
+
+		&__menu
+			display: none
+
+		&__button
+			width: 100%
+			font-size: 15px
+
+		&__data
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+
+		&__info
+			flex-basis: 95%
+			margin-bottom: 1.950rem
+
+		&__map
+			height: 21.25rem
+			width: 100%
+			order: -1
+			margin-bottom: 3.5rem
+			margin-top: -12px
+
+	.contacts
+		&__link
+			display: block
+
+	.icon
+		margin-top: -35px
+
+		&__email
+			width: 37px
+			margin-right: 1.85rem
+
+		&__instagram
+			width: 37px
 
 @media screen and (max-height: 520px)
 	.hero

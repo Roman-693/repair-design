@@ -43,8 +43,8 @@ $(document).ready(function () {
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width() + 10 + bullets.width() + 10)
-  bullets.css('left', prev.width() + 10)
+  next.css('left', prev.width() + 20 + bullets.width() + 20)
+  bullets.css('left', prev.width() + 20)
 
   new WOW().init();
 
@@ -137,5 +137,22 @@ $(document).ready(function () {
 
   //маска для номера телефона
   $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+
+  // Функция ymaps.ready() будет вызвана, когда
+  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+  ymaps.ready(init);
+  function init(){
+      // Создание карты.
+      var myMap = new ymaps.Map("map", {
+          // Координаты центра карты.
+          // Порядок по умолчанию: «широта, долгота».
+          // Чтобы не определять координаты центра карты вручную,
+          // воспользуйтесь инструментом Определение координат.
+          center: [47.244729, 39.723187],
+          // Уровень масштабирования. Допустимые значения:
+          // от 0 (весь мир) до 19.
+          zoom: 9
+      });
+  }
 
 });
